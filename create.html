@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Lance</title>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css" >
+        
+    </head>
+    <body>
+        <div class="background">
+            <nav>
+                <div class="container">
+                    <div class="nav-flex">
+                        <div class="brand">
+                            <h1><a href="index.html">Lance</a></h1>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li><a href="dashboard.html">Dashboard</a></li>
+                                <li><a href="current.html">Current Project</a></li>
+                                <li><a href="account.html">Account</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+               <form>
+                    <div class="form-step step-1">
+                        <h3>Step 1: Client Information</h3>
+                        <input type="text" id="client" placeholder="Client">
+                        <input type="text" id="clientEmail" placeholder="Client Email">
+                        <input type="text" id="clientAddress" placeholder="Client Address">
+                    </div>
+                    <div class="form-step step-2">
+                        <h3>Step 2: Project Information</h3>
+                        <input type="text" id="title" placeholder="Project Title">
+                        <textarea type="text" id="description" placeholder="Project Description"></textarea>
+                        <input type="text" name="date" id="duedate" placeholder="Deadline"> 
+                    </div>
+                    <div class="form-step step-3">`
+                        <h3>Step 3: Payment Information</h3>
+                            <div>
+                                <input class="option-input radio" type="radio" id="wage1" name="wage" value="Fixed Fee">
+                                <label for="wage1">Fixed Fee</label>
+                              
+                                <input class="option-input radio" type="radio" id="wage2" name="wage" value="Rate">
+                                <label for="wage2">Rate</label>
+                            </div>
+                          
+                        
+                        <input type="text" id="wage" placeholder="Wage">
+                    </div>
+                
+                    
+                    <button class="submitPost" onclick="create()">Post</button>
+                </form>
+            </div>
+        </div>
+        
+        <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+        <script src="assets/js/firebase.js"></script>
+        <script src="assets/js/create.js"></script>
+    </body>
+</html>

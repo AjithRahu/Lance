@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Lance | Register</title>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <div class="container">
+                    <div class="nav-flex">
+                        <div class="brand">
+                            <h1><a href="index.html">Lance</a></h1>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li><a href="login.html">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-content auth">
+                <div class="holder">
+                    <input id="txtEmail" type="email" placeholder="Email">
+                    <input id="txtPassword" type="password" placeholder="Password">
+                    <button id="btnSignup" class="btn" >Sign Up</button>
+                    <p class="switch-authentication">Already have an account? <a href="login.html">Sign In!</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+        <script type="text/javascript" src="assets/js/firebase.js"></script>
+        <script src="assets/js/login.js"></script> 
+        <script>
+           window.onload = signUp();    
+        </script>
+    </body>
+
+</html>
